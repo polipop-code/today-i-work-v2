@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Counter } from "./components/Counter/Counter";
+import { Searcher } from "./components/Searcher/Searcher";
+import { List } from "./components/List/List";
+import { ListItem } from "./components/ListItem/ListItem.jsx";
+import { NewListItemButton } from "./components/NewListItemButton/NewListItemButton";
+
+const todayList = [
+	{ text: "Do the bed", completed: false },
+	{ text: "Feed the cats", completed: false },
+	{ text: "Clean my room", completed: false },
+];
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<div className="Main">
+				<Counter />
+
+				<Searcher />
+
+				<List>
+					{todayList.map((e) => (
+						<ListItem key={e.text} text={e.text} />
+					))}
+				</List>
+				<NewListItemButton />
+			</div>
+		</div>
+	);
 }
 
 export default App;
