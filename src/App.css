@@ -4,8 +4,36 @@
 }
 
 .Main {
-	margin: 2rem;
-	padding: 1.2rem;
 	grid-column: 2/12;
+	margin: 4rem 0;
+	padding: 4rem;
+	display: flex;
+	background-color: #efefef;
+}
+
+.Main-LeftTag,
+.Main-RightTag {
+	width: 50%;
+	padding: 4rem;
+	display: flex;
+	flex-direction: column;
 	background-color: antiquewhite;
+}
+
+.Main-LeftTag {
+	background-color: goldenrod;
+}
+
+.Main-LeftTag p {
+	margin-bottom: 4rem;
+}
+
+.Main-LeftTag--ImageContainer {
+	width: 100%;
+}
+
+.Main-LeftTag--ImageContainer img {
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	width: 100%;
 }

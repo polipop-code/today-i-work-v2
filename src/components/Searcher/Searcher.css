@@ -1,0 +1,27 @@
+.Searcher {
+	margin-bottom: 2rem;
+	border: none;
+	padding: 0.7rem 1rem;
+	border-radius: 0.8rem;
+	width: 100%;
+	transition: all ease-in-out 0.5s;
+	margin-right: -2rem;
+}
+
+.Searcher:hover,
+.Searcher:focus {
+	box-shadow: 0 0 1em #00000013;
+}
+
+.Searcher:focus {
+	outline: none;
+}
+
+.Searcher::-webkit-input-placeholder {
+	font-weight: 100;
+	color: #ccc;
+}
+
+.Searcher:focus + .search__button {
+	background-color: #f0eeee;
+}

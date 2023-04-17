@@ -15,16 +15,27 @@ function App() {
 	return (
 		<div className="App">
 			<div className="Main">
-				<Counter />
+				<div className="Main-LeftTag">
+					<h1>Today I Work</h1>
+					<p>Welcome, glad to see you again, time to work ah?</p>
+					<NewListItemButton />
+					<div className="Main-LeftTag--ImageContainer">
+						<img
+							src="https://i.pinimg.com/564x/a5/31/47/a53147e258432e1eb97e3f8f4f5c7645.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
 
-				<Searcher />
-
-				<List>
-					{todayList.map((e) => (
-						<ListItem key={e.text} text={e.text} />
-					))}
-				</List>
-				<NewListItemButton />
+				<div className="Main-RightTag">
+					<Counter />
+					<Searcher />
+					<List>
+						{todayList.map((e) => (
+							<ListItem key={e.text} text={e.text} completed={e.completed} />
+						))}
+					</List>
+				</div>
 			</div>
 		</div>
 	);

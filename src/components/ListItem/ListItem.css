@@ -1,0 +1,19 @@
+.ListItem {
+	width: 100%;
+	margin-bottom: 2rem;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
+.Icon {
+	width: 2rem;
+	height: 2rem;
+	background: url("../../../public/resources/controlar.svg");
+	background-size: contain;
+}
+
+.Icon-delete {
+	background: url("../../../public/resources/cruz.svg");
+	background-size: contain;
+}
