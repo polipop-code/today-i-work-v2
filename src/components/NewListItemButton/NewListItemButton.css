@@ -1,32 +1,47 @@
 .NewListItemButton {
-	margin-bottom: 4rem;
-}
-
-.NewListItemButton {
-	background-color: #eee;
+	margin-bottom: 2rem;
 	border: none;
-	padding: 1rem;
-	font-size: 1rem;
-	width: 10em;
-	border-radius: 1rem;
-	color: lightcoral;
-	box-shadow: 0 0.4rem #dfd9d9;
+	padding: 0.7rem 1rem;
+	border-radius: 0.8rem;
+	color: skyblue;
 	cursor: pointer;
+	transition: all ease-in-out 0.2s;
 }
 
 .NewListItemButton:active {
 	color: white;
-	box-shadow: 0 0.2rem #dfd9d9;
 	transform: translateY(0.2rem);
 }
 
 .NewListItemButton:hover:not(:disabled) {
-	background: lightcoral;
+	background: skyblue;
 	color: white;
-	text-shadow: 0 0.1rem #bcb4b4;
 }
 
-.NewListItemButton:disabled {
-	cursor: auto;
-	color: grey;
+.NewListItemInput {
+	margin-bottom: 2rem;
+	border: none;
+	padding: 0.7rem 1rem;
+	border-radius: 0.8rem;
+	width: 100%;
+	transition: all ease-in-out 0.5s;
+	margin-right: -2rem;
+}
+
+.NewListItemInput:hover,
+.NewListItemInput:focus {
+	box-shadow: 0 0 1em #00000013;
+}
+
+.NewListItemInput:focus {
+	outline: none;
+}
+
+.NewListItemInput::-webkit-input-placeholder {
+	font-weight: 100;
+	color: #ccc;
+}
+
+.NewListItemInput:focus + .search__button {
+	background-color: #f0eeee;
 }

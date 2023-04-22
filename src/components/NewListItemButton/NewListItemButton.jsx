@@ -7,9 +7,12 @@ function NewListItemButton() {
 	};
 
 	return (
-		<button className="NewListItemButton" onClick={newItem}>
-			+
-		</button>
+		<>
+			<input className="NewListItemInput" type="text" placeholder="Create a new task..." />
+			<button className="NewListItemButton" onClick={newItem}>
+				+
+			</button>
+		</>
 	);
 }
 
