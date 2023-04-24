@@ -46,6 +46,15 @@ function GeneralProvider(props) {
 		saveTasks(newList);
 	};
 
+	const addTask = (text) => {
+		const newList = [...todayList];
+		newList.push({
+			completed: false,
+			text,
+		});
+		saveTasks(newList);
+	};
+
 	return (
 		<GeneralContext.Provider
 			value={{
@@ -58,6 +67,7 @@ function GeneralProvider(props) {
 				searchedTasks,
 				doneTasks,
 				deleteTask,
+				addTask,
 			}}
 		>
 			{props.children}

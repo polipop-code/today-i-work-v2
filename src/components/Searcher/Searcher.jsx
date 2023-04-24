@@ -1,7 +1,10 @@
 import React from "react";
 import "./Searcher.css";
+import { GeneralContext } from "../../context";
 
-function Searcher({ searchValue, setSearchValue }) {
+function Searcher() {
+	const { searchValue, setSearchValue } = React.useContext(GeneralContext);
+
 	const onWrite = (event) => {
 		console.log(event.target.value);
 		setSearchValue(event.target.value);
