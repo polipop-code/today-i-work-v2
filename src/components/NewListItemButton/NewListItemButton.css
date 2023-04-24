@@ -1,0 +1,47 @@
+.NewListItemButton {
+	margin-bottom: 2rem;
+	border: none;
+	padding: 0.7rem 1rem;
+	border-radius: 0.8rem;
+	color: skyblue;
+	cursor: pointer;
+	transition: all ease-in-out 0.2s;
+}
+
+.NewListItemButton:active {
+	color: white;
+	transform: translateY(0.2rem);
+}
+
+.NewListItemButton:hover:not(:disabled) {
+	background: skyblue;
+	color: white;
+}
+
+.NewListItemInput {
+	margin-bottom: 2rem;
+	border: none;
+	padding: 0.7rem 1rem;
+	border-radius: 0.8rem;
+	width: 100%;
+	transition: all ease-in-out 0.5s;
+	margin-right: -2rem;
+}
+
+.NewListItemInput:hover,
+.NewListItemInput:focus {
+	box-shadow: 0 0 1em #00000013;
+}
+
+.NewListItemInput:focus {
+	outline: none;
+}
+
+.NewListItemInput::-webkit-input-placeholder {
+	font-weight: 100;
+	color: #ccc;
+}
+
+.NewListItemInput:focus + .search__button {
+	background-color: #f0eeee;
+}

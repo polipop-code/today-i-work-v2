@@ -1,0 +1,47 @@
+.ListItem {
+	width: 100%;
+	margin-bottom: 2rem;
+	border-radius: 0.8rem;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Icon {
+	width: 2rem;
+	height: 2rem;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all ease-in-out 0.2s;
+}
+
+.Icon:active {
+	color: white;
+	transform: translateY(0.2rem);
+}
+
+.Icon:hover:not(:disabled) {
+	background-color: lightgreen;
+}
+
+.Icon-check--active {
+	background-color: lightgreen;
+}
+
+.ListItem-p--completed {
+	text-decoration: line-through;
+}
+
+.Icon-delete:active {
+	color: white;
+	transform: translateY(0.2rem);
+}
+
+.Icon-delete:hover:not(:disabled) {
+	background: lightcoral;
+	color: white;
+}
