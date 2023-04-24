@@ -1,9 +1,11 @@
 .NewListItemButton {
+	height: 4rem;
 	margin-bottom: 2rem;
 	border: none;
 	padding: 0.7rem 1rem;
 	border-radius: 0.8rem;
 	color: skyblue;
+	background-color: snow;
 	cursor: pointer;
 	transition: all ease-in-out 0.2s;
 }
@@ -24,6 +26,7 @@
 	padding: 0.7rem 1rem;
 	border-radius: 0.8rem;
 	width: 100%;
+	height: 4rem;
 	transition: all ease-in-out 0.5s;
 	margin-right: -2rem;
 }

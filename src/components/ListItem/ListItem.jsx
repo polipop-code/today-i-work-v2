@@ -10,7 +10,9 @@ function ListItem(props) {
 			>
 				<i className="fi fi-sr-check"></i>
 			</span>
-			<p className={`ListItem-p ${props.completed && "ListItem-p--completed"}`}>{props.text}</p>
+			<div className="Icon-text-container">
+				<p className={`ListItem-p ${props.completed && "ListItem-p--completed"}`}>{props.text}</p>
+			</div>
 			<span className="Icon Icon-delete" onClick={props.onDelete}>
 				<i className="fi fi-sr-cross"></i>
 			</span>

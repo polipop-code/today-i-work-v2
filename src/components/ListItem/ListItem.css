@@ -1,27 +1,35 @@
 .ListItem {
-	width: 100%;
+	min-height: 8rem;
 	margin-bottom: 2rem;
 	border-radius: 0.8rem;
 	overflow: hidden;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+
+	background-color: snow;
 }
 
 .Icon {
-	width: 2rem;
-	height: 2rem;
-	padding: 2rem;
+	width: 20%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
 	transition: all ease-in-out 0.2s;
+	z-index: 2;
+}
+
+.Icon-text-container {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-wrap: break-word;
 }
 
 .Icon:active {
 	color: white;
-	transform: translateY(0.2rem);
+	transform: scale(0.2rem);
 }
 
 .Icon:hover:not(:disabled) {
