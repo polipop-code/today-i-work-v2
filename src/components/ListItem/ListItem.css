@@ -20,11 +20,16 @@
 }
 
 .Icon-text-container {
-	width: 50%;
+	width: 60%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	overflow-wrap: break-word;
+	text-align: center;
+}
+
+.Icon-text-container p {
+	padding: 0;
 }
 
 .Icon:active {
@@ -46,7 +51,6 @@
 
 .Icon-delete:active {
 	color: white;
-	transform: translateY(0.2rem);
 }
 
 .Icon-delete:hover:not(:disabled) {

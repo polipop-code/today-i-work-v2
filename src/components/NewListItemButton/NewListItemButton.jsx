@@ -17,6 +17,13 @@ function NewListItemButton() {
 		setNewTaskText("");
 	};
 
+	const onKeyEnter = (event) => {
+		if (event.keyCode === 13) {
+			addTask(newTaskText);
+			setNewTaskText("");
+		}
+	};
+
 	return (
 		<>
 			<input
@@ -25,6 +32,7 @@ function NewListItemButton() {
 				placeholder="Create a new task..."
 				value={newTaskText}
 				onChange={onChange}
+				onKeyUp={onKeyEnter}
 			/>
 			<button className="NewListItemButton" onClick={onSubmit}>
 				+
