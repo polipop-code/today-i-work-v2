@@ -13,7 +13,7 @@ function AppUI() {
 			<div className="Main">
 				<div className="Main-LeftTag">
 					<h1>Today I Work</h1>
-					<p>Welcome, glad to see you again, time to work ah?</p>
+					<p>The developers to-do app"</p>
 					<NewListItemButton />
 					<div className="Main-LeftTag--ImageContainer">
 						<img
@@ -25,7 +25,7 @@ function AppUI() {
 
 				<div className="Main-RightTag">
 					<Counter />
-					<Searcher />
+					{/* <Searcher /> */}
 					<GeneralContext.Consumer>
 						{({ error, loading, searchedTasks, doneTasks, deleteTask }) => {
 							return (

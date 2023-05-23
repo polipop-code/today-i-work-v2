@@ -25,7 +25,7 @@ function NewListItemButton() {
 	};
 
 	return (
-		<>
+		<div className="NewList-items">
 			<input
 				className="NewListItemInput"
 				type="text"
@@ -37,7 +37,7 @@ function NewListItemButton() {
 			<button className="NewListItemButton" onClick={onSubmit}>
 				+
 			</button>
-		</>
+		</div>
 	);
 }
 
